@@ -47,3 +47,10 @@ This project demonstrates a custom Sales Cloud opportunity health scoring soluti
 4. Built OpportunityTrigger for insert and update events
 5. Created unit tests with 100% pass rate
 6. Version controlled using Git and GitHub
+
+## Future Enhancements
+
+- Add custom Lightning component for health visualization
+- Add scheduled recalculation job
+- Add email notification for At Risk opportunities
+- Add custom report and dashboard
