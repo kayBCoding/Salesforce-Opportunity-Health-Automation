@@ -1,18 +1,40 @@
-# Salesforce DX Project: Next Steps
+# Sales Cloud Opportunity Health Automation
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Overview
+This project demonstrates a custom Sales Cloud opportunity health scoring solution built using Apex, Triggers, Custom Fields, and Lightning Record Pages.
 
-## How Do You Plan to Deploy Your Changes?
+## Features
+- Custom Opportunity Health Score field
+- Custom Opportunity Health Status field
+- Apex service class for health calculations
+- Trigger automation on insert and update
+- Unit tests with 100% pass rate
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Health Scoring Logic
 
-## Configure Your Salesforce DX Project
+| Criteria | Points |
+|-----------|---------|
+| Amount populated | 25 |
+| Synced Quote present | 25 |
+| Next Step populated | 25 |
+| Delivery/Installation Status populated | 25 |
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+### Status Mapping
 
-## Read All About It
+- 90-100 = Excellent
+- 70-89 = Healthy
+- 40-69 = Needs Attention
+- Below 40 = At Risk
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## Technologies
+- Salesforce Sales Cloud
+- Apex
+- Triggers
+- Salesforce DX
+- Git/GitHub
+
+## Test Coverage
+3 passing unit tests validating:
+- Excellent scenario
+- At Risk scenario
+- Trigger execution scenario
