@@ -46,14 +46,26 @@ This project demonstrates a custom Sales Cloud opportunity health scoring soluti
 - At Risk opportunity health scenario
 - Trigger execution and score recalculation
 
-## Development Workflow
+## Screenshots
 
-1. Created custom Opportunity Health Score field
-2. Created custom Opportunity Health Status field
-3. Built OpportunityHealthService Apex class
-4. Implemented OpportunityTrigger for insert and update events
-5. Developed unit tests covering core business scenarios
-6. Version controlled using Git and GitHub
+### Project Overview
+![Project Overview](docs/images/project-overview.jpg)
+
+### Custom Opportunity Fields
+![Custom Fields](docs/images/custom-fields.png)
+
+### Apex Health Scoring Logic
+![Health Service](docs/images/opportunity-health-service.png)
+
+### Trigger Automation
+![Trigger](docs/images/opportunity-trigger.png)
+
+### Unit Test Results
+![Test Results](docs/images/test-results.png)
+
+### Opportunity Record Page
+![Opportunity Record Page](docs/images/opportunity-record-page.png)
+
 
 ## Future Enhancements
 
